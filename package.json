@@ -1,0 +1,23 @@
+{
+  "name": "restaurant-js",
+  "version": "1.0.0",
+  "description": "Restaurant sample page using `npm`, `webpack` and `JS` to dynamically render the content of the page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codingAngarita/Restaurant-JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codingAngarita/Restaurant-JS/issues"
+  },
+  "homepage": "https://github.com/codingAngarita/Restaurant-JS#readme",
+  "devDependencies": {
+    "webpack": "^4.41.0"
+  }
+}
