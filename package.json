@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/codingAngarita/Restaurant-JS#readme",
   "devDependencies": {
-    "webpack": "^4.41.0"
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
   }
 }
