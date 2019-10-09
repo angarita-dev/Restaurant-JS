@@ -1,7 +1,8 @@
 @import '_variables';
+@import '_nav';
 
 html {
-  height: 180vh;
+  height:180vh;
 }
 
 body {
@@ -9,20 +10,7 @@ body {
   border: 0;
   color: $text-color;
   font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
   height: 100%;
   margin: 0;
-}
-
-nav {
-  height: 5%;
-  ul {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    justify-content: space-evenly;
-    list-style: none;
-    margin: 0 auto;
-    width: 50%;
-  }
 }
