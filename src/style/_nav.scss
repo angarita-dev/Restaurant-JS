@@ -1,8 +1,11 @@
+@import './variables';
+
 nav {
+  background-color: $background;
   height: 10%;
-  position: fixed;
+  position: sticky;
   top: 0;
-  transition: all 1s ease-out;
+  transition: all 0.3s ease-out;
   width: 100%;
   ul {
     align-items: center;
@@ -25,6 +28,11 @@ nav {
       }
     }
   }
+}
+
+.selected {
+  border-bottom: 1px solid $highlight;
+  transition: all 1s ease;
 }
 
 .nav-up {
