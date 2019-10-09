@@ -4,7 +4,8 @@
   "description": "Restaurant sample page using `npm`, `webpack` and `JS` to dynamically render the content of the page.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js && sass './src/style/main.scss' './dist/stylesheet.css'"
   },
   "repository": {
     "type": "git",
