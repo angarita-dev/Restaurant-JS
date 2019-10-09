@@ -9,14 +9,19 @@
   <title>Restaurant-JS</title>
 </head>
 <body>
-  <nav id="navbar" class="nav-up">
+  <nav id="navbar" class="nav-up nav">
     <ul>
-      <li><a>home</a></li>
-      <li><a>about us</a></li>
-      <li><a>contact us</a></li>
+      <li id="home-btn" class="tab selected"><a>home</a></li>
+      <li id="about-btn" class="tab"><a>about us</a></li>
+      <li id="contact-btn" class="tab"><a>contact us</a></li>
     </ul>
   </nav>
-  <div id="content"></div>
+  <div id="content" class="content">
+    <div class="container">
+      <h2>Welcome to our intangible restaurant</h2>
+      <h4>You can ask for the <span class="code">menu()</span> over there, in the <span class="code">developer console</span></h4>
+    </div>
+  </div>
   <script src="main.js"></script>
 </body>
 </html>
