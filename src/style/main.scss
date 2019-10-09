@@ -1,0 +1,28 @@
+@import '_variables';
+
+html {
+  height: 180vh;
+}
+
+body {
+  background-color: $background;
+  border: 0;
+  color: $text-color;
+  font-family: 'Source Sans Pro', sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+nav {
+  height: 5%;
+  ul {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0 auto;
+    width: 50%;
+  }
+}
