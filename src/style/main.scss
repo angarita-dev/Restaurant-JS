@@ -2,7 +2,7 @@
 @import '_nav';
 
 html {
-  height:180vh;
+  height: 100vh;
 }
 
 body {
@@ -13,4 +13,50 @@ body {
   font-weight: 300;
   height: 100%;
   margin: 0;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 89.9%;       // adjusting for borders;
+  justify-content: center;
+  .landing-img {
+    height: 100%;
+    opacity: 0.3;
+    width: 70%;
+    &:hover {
+      transition: all 0.5s ease;
+      opacity: 0.2;
+    }
+  }
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.outside-link {
+  color: $codehighlight;
+  text-decoration: none;
+}
+
+.code {
+  color: $codehighlight;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
