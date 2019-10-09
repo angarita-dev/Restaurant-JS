@@ -1,6 +1,6 @@
 linters:
   csslint:
-    ignore: 'box-model'
+    ignore: 'box-model','known-properties'
   eslint:
     config: './eslint.config'
 files:
