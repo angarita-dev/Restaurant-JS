@@ -1,8 +1,9 @@
 nav {
+  background-color: #0d2e3d;
   height: 10%;
-  position: fixed;
+  position: sticky;
   top: 0;
-  transition: all 1s ease-out;
+  transition: all 0.3s ease-out;
   width: 100%; }
   nav ul {
     align-items: center;
@@ -23,6 +24,10 @@ nav {
         border-bottom: 1px solid #ee982b;
         transition: all 1s ease; }
 
+.selected {
+  border-bottom: 1px solid #ee982b;
+  transition: all 1s ease; }
+
 .nav-up {
   border-bottom: 1px solid rgba(255, 255, 255, 0); }
 
@@ -30,7 +35,7 @@ nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
 
 html {
-  height: 180vh; }
+  height: 100vh; }
 
 body {
   background-color: #0d2e3d;
@@ -40,5 +45,43 @@ body {
   font-weight: 300;
   height: 100%;
   margin: 0; }
+
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 89.9%;
+  justify-content: center; }
+  .content .landing-img {
+    height: 100%;
+    opacity: 0.3;
+    width: 70%; }
+    .content .landing-img:hover {
+      transition: all 0.5s ease;
+      opacity: 0.2; }
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+
+.outside-link {
+  color: #e2cc6a;
+  text-decoration: none; }
+
+.code {
+  color: #e2cc6a; }
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease; }
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease; }
 
 /*# sourceMappingURL=stylesheet.css.map */
