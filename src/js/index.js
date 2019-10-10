@@ -14,19 +14,34 @@ const domMounter = () => {
   const aboutBtn = document.getElementById('about-btn');
   const contactBtn = document.getElementById('contact-btn');
 
+  const dismount = (container) => {
+    while (container.firstChild) {
+      container.removeChild(container.firstChild);
+    }
+  }
+  
   const mount = (container, content) => {
-    const wraped = `<div class="container">${content}</div>`;
-    container.classList.add('fade-out');
-    setTimeout(() => { 
-      container.innerHTML = wraped;
-      container.classList.remove('fade-out');
-    }, 600);
-    container.classList.add('fade-in')
+    let wrapped = document.createElement('div');
+    wrapped.classList.add('container')
+    for (let element_index in content) {
+      wrapped.appendChild(content[element_index]);
+    }
+    container.appendChild(wrapped);
   }
 
-  homeBtn.addEventListener('click', () => { mount(container, home()) } );
-  aboutBtn.addEventListener('click', () => { mount(container, about()) } );
-  contactBtn.addEventListener('click', () => { mount(container, contact()) } );
+  const display = (container, content) => {
+    container.classList.add('fade-out');
+    setTimeout(() => { 
+      dismount(container);
+      mount(container, content);
+      container.classList.remove('fade-out');
+    }, 600);
+    container.classList.add('fade-in');
+  }
+
+  homeBtn.addEventListener('click', () => { display(container, home()) } );
+  aboutBtn.addEventListener('click', () => { display(container, about()) } );
+  contactBtn.addEventListener('click', () => { display(container, contact()) } );
 }
 
 const init = (() => {
