@@ -12,7 +12,7 @@ const tabSelector = (() => {
   };
   const addEventListener = () => {
     for (let tab of elements) {
-      tab.addEventListener('click', (() => { toggleClass(tab) }));
+      tab.addEventListener('click', (() => { toggleClass(tab); }));
     }
   };
   return addEventListener();

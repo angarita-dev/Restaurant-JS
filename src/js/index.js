@@ -22,7 +22,7 @@ const domMounter = () => {
   const mount = (container, content) => {
     const wrapped = document.createElement('div');
     wrapped.classList.add('container');
-    content.map((element) => wrapped.appendChild(element));
+    content.map(element => wrapped.appendChild(element));
     container.appendChild(wrapped);
   };
 
