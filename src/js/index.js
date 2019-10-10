@@ -17,31 +17,29 @@ const domMounter = () => {
     while (container.firstChild) {
       container.removeChild(container.firstChild);
     }
-  }
-  
+  };
+
   const mount = (container, content) => {
-    let wrapped = document.createElement('div');
-    wrapped.classList.add('container')
-    for (let element_index in content) {
-      wrapped.appendChild(content[element_index]);
-    }
+    const wrapped = document.createElement('div');
+    wrapped.classList.add('container');
+    content.map((element) => wrapped.appendChild(element));
     container.appendChild(wrapped);
-  }
+  };
 
   const display = (container, content) => {
     container.classList.add('fade-out');
-    setTimeout(() => { 
+    setTimeout(() => {
       dismount(container);
       mount(container, content);
       container.classList.remove('fade-out');
     }, 600);
     container.classList.add('fade-in');
-  }
+  };
 
-  homeBtn.addEventListener('click', () => { display(container, home()) } );
-  aboutBtn.addEventListener('click', () => { display(container, about()) } );
-  contactBtn.addEventListener('click', () => { display(container, contact()) } );
-}
+  homeBtn.addEventListener('click', () => { display(container, home()); });
+  aboutBtn.addEventListener('click', () => { display(container, about()); });
+  contactBtn.addEventListener('click', () => { display(container, contact()); });
+};
 
 const init = (() => {
   tabSelector();
