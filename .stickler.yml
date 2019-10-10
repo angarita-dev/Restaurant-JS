@@ -10,3 +10,4 @@ files:
     - 'dist/main.js'
     - 'bower_components/*'
     - 'node_modules/*' 
+    - 'webpack.config.js'
