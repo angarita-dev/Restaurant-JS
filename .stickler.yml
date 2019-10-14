@@ -1,0 +1,13 @@
+linters:
+  csslint:
+    ignore: 
+      - 'box-model'
+      - 'known-properties'
+  eslint:
+    config: './eslint.config'
+files:
+  ignore:
+    - 'dist/main.js'
+    - 'bower_components/*'
+    - 'node_modules/*' 
+    - 'webpack.config.js'
