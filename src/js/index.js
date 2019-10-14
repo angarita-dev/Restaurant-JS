@@ -1,5 +1,6 @@
 import scrollNav from './modules/navbar-scroll';
 import tabSelector from './modules/navbar-tab-select';
+import digitalMenu from './modules/digital-menu';
 
 import home from './modules/home';
 import about from './modules/about';
@@ -42,6 +43,7 @@ const domMounter = () => {
 };
 
 const init = (() => {
+  digitalMenu();
   tabSelector();
   scrollNav();
   domMounter();
